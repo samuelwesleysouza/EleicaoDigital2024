@@ -1,5 +1,10 @@
 # EleicaoDigital2024
-Backend Completo para uma boa gestão nas eleição. 
+NET Framework
+Desenvolvimento do BackEnd para - aplicativos web usando .NET Framework
+Criação de APIs com ASP.NET Web API - com foco do projeto EleicaoDigital2024
+Acesso a dados com Entity Framework
+Banco de Dados SQL .
+Backend 100% funcionando Arquitetura MVC com banco de dados SQL .
 
 <img align="right" height="590em"
 src=https://raw.githubusercontent.com/gist/samuelwesleysouza/438547ebd75d17736d6e446323b44317/raw/e7c8bd3abd787a10f6412ed22e9d199698b4686b/githubcard.svg/>
