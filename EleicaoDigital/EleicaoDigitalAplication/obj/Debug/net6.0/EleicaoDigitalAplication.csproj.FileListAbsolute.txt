@@ -1,0 +1,17 @@
+C:\EleicaoDigital\EleicaoDigitalAplication\bin\Debug\net6.0\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\EleicaoDigital\EleicaoDigitalAplication\bin\Debug\net6.0\Cosmos.CRTCompat.dll
+C:\EleicaoDigital\EleicaoDigitalAplication\bin\Debug\net6.0\EleicaoDigitalAplication.deps.json
+C:\EleicaoDigital\EleicaoDigitalAplication\bin\Debug\net6.0\EleicaoDigitalAplication.dll
+C:\EleicaoDigital\EleicaoDigitalAplication\bin\Debug\net6.0\EleicaoDigitalAplication.pdb
+C:\EleicaoDigital\EleicaoDigitalAplication\bin\Debug\net6.0\EleicaoRepository.dll
+C:\EleicaoDigital\EleicaoDigitalAplication\bin\Debug\net6.0\EleicaoRepository.pdb
+C:\EleicaoDigital\EleicaoDigitalAplication\obj\Debug\net6.0\EleicaoDigitalAplication.csproj.AssemblyReference.cache
+C:\EleicaoDigital\EleicaoDigitalAplication\obj\Debug\net6.0\EleicaoDigitalAplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\EleicaoDigital\EleicaoDigitalAplication\obj\Debug\net6.0\EleicaoDigitalAplication.AssemblyInfoInputs.cache
+C:\EleicaoDigital\EleicaoDigitalAplication\obj\Debug\net6.0\EleicaoDigitalAplication.AssemblyInfo.cs
+C:\EleicaoDigital\EleicaoDigitalAplication\obj\Debug\net6.0\EleicaoDigitalAplication.csproj.CoreCompileInputs.cache
+C:\EleicaoDigital\EleicaoDigitalAplication\obj\Debug\net6.0\EleicaoDigitalAplication.csproj.CopyComplete
+C:\EleicaoDigital\EleicaoDigitalAplication\obj\Debug\net6.0\EleicaoDigitalAplication.dll
+C:\EleicaoDigital\EleicaoDigitalAplication\obj\Debug\net6.0\refint\EleicaoDigitalAplication.dll
+C:\EleicaoDigital\EleicaoDigitalAplication\obj\Debug\net6.0\EleicaoDigitalAplication.pdb
+C:\EleicaoDigital\EleicaoDigitalAplication\obj\Debug\net6.0\ref\EleicaoDigitalAplication.dll

@@ -1,0 +1,12 @@
+C:\EleicaoDigital\EleicaoRepository\bin\Debug\net6.0\EleicaoRepository.deps.json
+C:\EleicaoDigital\EleicaoRepository\bin\Debug\net6.0\EleicaoRepository.dll
+C:\EleicaoDigital\EleicaoRepository\bin\Debug\net6.0\EleicaoRepository.pdb
+C:\EleicaoDigital\EleicaoRepository\obj\Debug\net6.0\EleicaoRepository.csproj.AssemblyReference.cache
+C:\EleicaoDigital\EleicaoRepository\obj\Debug\net6.0\EleicaoRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\EleicaoDigital\EleicaoRepository\obj\Debug\net6.0\EleicaoRepository.AssemblyInfoInputs.cache
+C:\EleicaoDigital\EleicaoRepository\obj\Debug\net6.0\EleicaoRepository.AssemblyInfo.cs
+C:\EleicaoDigital\EleicaoRepository\obj\Debug\net6.0\EleicaoRepository.csproj.CoreCompileInputs.cache
+C:\EleicaoDigital\EleicaoRepository\obj\Debug\net6.0\EleicaoRepository.dll
+C:\EleicaoDigital\EleicaoRepository\obj\Debug\net6.0\refint\EleicaoRepository.dll
+C:\EleicaoDigital\EleicaoRepository\obj\Debug\net6.0\EleicaoRepository.pdb
+C:\EleicaoDigital\EleicaoRepository\obj\Debug\net6.0\ref\EleicaoRepository.dll
