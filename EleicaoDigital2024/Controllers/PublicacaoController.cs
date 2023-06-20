@@ -71,7 +71,7 @@ namespace EleicaoDigital2024.Controllers
             return Ok(publicacao);
         }
 
-        [HttpGet("{tipoPublicacao/usuarioCodigo}")]
+        [HttpGet("{tipoPublicacao}/{usuarioCodigo}")]
         [Consumes("application/json")]
         [Produces("application/json")]
         [Authorize]

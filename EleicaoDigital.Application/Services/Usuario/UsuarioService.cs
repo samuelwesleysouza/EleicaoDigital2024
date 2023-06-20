@@ -35,7 +35,7 @@ namespace EleicaoDigital.Application.Services.Usuario
             {
                 var usuariViewModel = new UsuarioViewModel
                 {
-                    Id = usuario.Id,
+                    Id = usuario.Codigo,
                     Nome = usuario.Nome,
                     Email = usuario.Email,
                     Telefone = usuario.Telefone,
@@ -83,7 +83,7 @@ namespace EleicaoDigital.Application.Services.Usuario
 
             var usuariViewModel = new UsuarioViewModel
             {
-                Id = usuario.Id,
+                Id = usuario.Codigo,
                 Nome = usuario.Nome,
                 Email = usuario.Email,
                 Telefone = usuario.Telefone,
@@ -106,7 +106,7 @@ namespace EleicaoDigital.Application.Services.Usuario
 
             var usuarioViewModel = new UsuarioViewModel
             {
-                Id = usuarioModel.Id,
+                Id = usuarioModel.Codigo,
                 Nome = usuarioModel.Nome,
                 Email = usuarioModel.Email,
                 Telefone = usuarioModel.Telefone,
@@ -124,7 +124,7 @@ namespace EleicaoDigital.Application.Services.Usuario
             if (usuarios.Any())
                 return usuarios.Select(u => new UsuarioViewModel
                 {
-                    Id = u.Id,
+                    Id = u.Codigo,
                     Nome = u.Nome,
                     Email = u.Email,
                     Telefone = u.Telefone,
@@ -143,7 +143,7 @@ namespace EleicaoDigital.Application.Services.Usuario
             if (usuarios.Any())
                 return usuarios.Select(u => new UsuarioViewModel
                 {
-                    Id = u.Id,
+                    Id = u.Codigo,
                     Nome = u.Nome,
                     Email = u.Email,
                     Telefone = u.Telefone,

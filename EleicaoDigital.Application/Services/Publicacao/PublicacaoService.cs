@@ -9,7 +9,7 @@ namespace EleicaoDigital.Application.Services.Publicacao
     {
         private readonly IPublicacaoRepository _publiRepository;
 
-        public PublicacaoService(PublicacaoRepository publiRepository)
+        public PublicacaoService(IPublicacaoRepository publiRepository)
         {
             _publiRepository = publiRepository;
         }
@@ -29,7 +29,7 @@ namespace EleicaoDigital.Application.Services.Publicacao
 
             return new PublicacaoViewModel
             {
-                Id = publicacao.Id,
+                Id = publicacao.Codigo,
                 Titulo = publicacao.Titulo,
                 Texto = publicacao.Texto,
                 PublicacaoTipo = publicacao.PublicacaoTipo,
@@ -52,7 +52,7 @@ namespace EleicaoDigital.Application.Services.Publicacao
 
             return new PublicacaoViewModel
             {
-                Id = publicacao.Id,
+                Id = publicacao.Codigo,
                 Titulo = publicacao.Titulo,
                 Texto = publicacao.Texto,
                 PublicacaoTipo = publicacao.PublicacaoTipo,
@@ -73,7 +73,7 @@ namespace EleicaoDigital.Application.Services.Publicacao
 
             return new PublicacaoViewModel
             {
-                Id = publicacao.Id,
+                Id = publicacao.Codigo,
                 Titulo = publicacao.Titulo,
                 Texto = publicacao.Texto,
                 PublicacaoTipo = publicacao.PublicacaoTipo,
@@ -90,7 +90,7 @@ namespace EleicaoDigital.Application.Services.Publicacao
 
             return publicacao.Select(p => new PublicacaoViewModel
             {
-                Id = p.Id,
+                Id = p.Codigo,
                 Titulo = p.Titulo,
                 Texto = p.Texto,
                 PublicacaoTipo = p.PublicacaoTipo,

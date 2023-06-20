@@ -26,7 +26,7 @@ namespace EleicaoDigital.Repository.Repository.Publicacao
         }
         public bool ApagarPublicacao(int publicacaoCodigo)
         {
-            var publicacao = _context.tabPublicacao.FirstOrDefault(p => p.Id == publicacaoCodigo);
+            var publicacao = _context.tabPublicacao.FirstOrDefault(p => p.Codigo == publicacaoCodigo);
 
             if (publicacao is null)
                 return false;

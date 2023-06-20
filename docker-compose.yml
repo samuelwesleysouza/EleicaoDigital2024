@@ -28,6 +28,6 @@ services:
       MYSQL_ROOT_PASSWORD: root1234
       MYSQL_USER: teste
       MYSQL_PASSWORD: teste1234
-      MYSQL_DATABASE: db_eleicaoDigital
+      MYSQL_DATABASE: db_app_eleicao_digital
 volumes:
   db-volume:
