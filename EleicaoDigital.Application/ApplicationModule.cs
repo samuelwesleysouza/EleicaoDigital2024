@@ -1,5 +1,4 @@
-﻿using EleicaoDigital.Application.Services.Pessoa;
-using EleicaoDigital.Application.Services.PostUsuario;
+﻿using EleicaoDigital.Application.Services.Publicacao;
 using EleicaoDigital.Application.Services.Usuario;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,9 +20,8 @@ namespace EleicaoDigital.Application
 
         private static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            services.AddScoped<IPessoaService, PessoaService>();
             services.AddScoped<IUsuarioService, UsuarioService>();
-            services.AddScoped<IPostsUsuarioService, PostsUsuarioService>();
+            services.AddScoped<IPublicacaoService, PublicacaoService>();
 
             return services;
         }

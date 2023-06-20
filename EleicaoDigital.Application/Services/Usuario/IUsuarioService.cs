@@ -1,14 +1,15 @@
 ﻿using EleicaoDigital.Application.Models.InputModel;
 using EleicaoDigital.Application.Models.ViewModel;
-using EleicaoDigital.Repository.Entities;
 
 namespace EleicaoDigital.Application.Services.Usuario
 {
     public interface IUsuarioService
     {
-        UsuarioLoginViewModel? Login(string email, string password);
-        UsuarioNovoViewModel CadastrarUsuario(UsuarioRequest usuarioRequest);
+        UsuarioLoginViewModel Login(string email, string password);
+        UsuarioLoginViewModel CadastrarUsuario(UsuarioRequest usuarioRequest, int usuarioLiderCadastro);
         UsuarioViewModel ObterUsuarioPorEmail(string email);
-        string GerarTokenJwt(UsuarioViewModel usuario);
+        List<UsuarioViewModel> ObterTodos();
+        List<UsuarioViewModel> ObterPorBairroOuLider(string bairro, int? lider);
+        string GerarTokenJwt(UsuarioViewModel usuario, string role);
     }
 }

@@ -1,19 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using EleicaoDigital.Repository.Entities.Base;
 
 namespace EleicaoDigital.Repository.Entities
 {
-    public class tabUsuario
+    public class tabUsuario : BaseEntity
     {
-        [Key]
-        public int Id { get; set; }
-        public int PessoaCodigo{ get; set; }
-        public string? UserName { get; set; }
+        public string? Nome { get; set; }
         public string? Email { get; set; }
         public string? Senha { get; set; }
         public string? Role { get; set; }
-        public DateTime DataCadastroUsuario { get; set; }
-        ///public virtual tabPessoa? Pessoa { get; set; }
-        //public virtual ICollection<tabPostUsuario>? PostsUsuarios { get; set; }
-
+        public string? Instagram { get; set; }
+        public string? Telefone { get; set; }
+        public string? Logradouro { get; set; }
+        public string? Bairro { get; set; }
     }
 }

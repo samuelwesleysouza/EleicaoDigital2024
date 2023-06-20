@@ -1,4 +1,6 @@
 ﻿using EleicaoDigital.Repository.Entities;
+using Microsoft.EntityFrameworkCore;
+using System.Runtime.CompilerServices;
 
 namespace EleicaoDigital.Repository.Repository.Usuario
 {
@@ -19,9 +21,18 @@ namespace EleicaoDigital.Repository.Repository.Usuario
             return usuarioModel;
 
         }
-        public tabUsuario ObterUsarioPorEmail(string email)
+        public tabUsuario ObterUsuarioPorEmail(string email)
         {
             return _context.tabUsuario.FirstOrDefault(b => b.Email == email);
+        }
+
+        public List<tabUsuario> ObterTodos()
+        {
+            return _context.tabUsuario.AsNoTracking().ToList();
+        }
+        public List<tabUsuario> ObterPorBairroOuLider(string bairro, int? lider)
+        {
+            return _context.tabUsuario.AsNoTracking().Where(u => u.Bairro == bairro || u.UsuarioCadastroCodigo == lider).ToList();
         }
     }
 }

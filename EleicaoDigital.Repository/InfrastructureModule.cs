@@ -1,5 +1,4 @@
-﻿using EleicaoDigital.Repository.Repository.Pessoa;
-using EleicaoDigital.Repository.Repository.PostUsuario;
+﻿using EleicaoDigital.Repository.Repository.Publicacao;
 using EleicaoDigital.Repository.Repository.Usuario;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -41,9 +40,8 @@ namespace EleicaoDigital.Repository
 
         private static IServiceCollection AddRepositories(this IServiceCollection services)
         {
-            services.AddScoped<IPessoaRepository, PessoaRepository>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
-            services.AddScoped<IPostsUsuarioRepository, PostsUsuarioRepository>();
+            services.AddScoped<IPublicacaoRepository, PublicacaoRepository>();
 
             return services;
         }
