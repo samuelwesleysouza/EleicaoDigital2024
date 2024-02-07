@@ -16,8 +16,11 @@ namespace EleicaoDigital2024.Controllers
         {
             _usuarioService = usuarioService;
         }
-       
-        
+
+        /// <summary>
+        /// Endpoint para realizar login de usuário.
+        /// </summary>
+        /// <param name="request">Dados de login do usuário.</param>
         [HttpPost]
         [Consumes("application/json")]
         [Produces("application/json")]
@@ -32,6 +35,10 @@ namespace EleicaoDigital2024.Controllers
             return Ok(usuario);
         }
 
+        /// <summary>
+        /// Endpoint para criar um novo usuário.
+        /// </summary>
+        /// <param name="request">Dados do novo usuário a ser criado.</param>
         [HttpPost]
         [Consumes("application/json")]
         [Produces("application/json")]
@@ -46,6 +53,9 @@ namespace EleicaoDigital2024.Controllers
             return Ok(usuario);
         }
 
+        /// <summary>
+        /// Endpoint para obter todos os usuários.
+        /// </summary>
         [HttpGet]
         [Consumes("application/json")]
         [Produces("application/json")]
@@ -55,11 +65,16 @@ namespace EleicaoDigital2024.Controllers
             var usuarios = _usuarioService.ObterTodos();
 
             if (!usuarios.Any())
-                return NotFound(new { message = "Usuários não encontrado" });
+                return NotFound(new { message = "Usuários não encontrados" });
 
             return Ok(usuarios);
         }
 
+        /// <summary>
+        /// Endpoint para obter usuários por bairro ou líder.
+        /// </summary>
+        /// <param name="bairro">Nome do bairro.</param>
+        /// <param name="lider">ID do líder (opcional).</param>
         [HttpGet]
         [Consumes("application/json")]
         [Produces("application/json")]
@@ -72,5 +87,29 @@ namespace EleicaoDigital2024.Controllers
 
             return Ok(usuarios);
         }
+
+        /// <summary>
+        /// Endpoint para obter a quantidade de cadastros feitos por um líder.
+        /// </summary>
+        /// <param name="bairro">Nome do bairro (opcional).</param>
+        /// <param name="lider">ID do líder (opcional).</param>
+        [HttpGet]
+        [Consumes("application/json")]
+        [Produces("application/json")]
+        [Route("quantidade-cadastro-lider")]
+        public ActionResult<int> ObterQuantidadeCadastroLider(string bairro = null, int? lider = null)
+        {
+            if (bairro != null && lider != null)
+            {
+                // Se ambos os parâmetros forem fornecidos, você pode optar por lidar com isso da maneira que preferir,
+                // como retornar um erro ou simplesmente ignorar um deles.
+                return Ok("nenhum lider encontrado");
+            }
+
+            var quantidade = _usuarioService.ObterQuatidadedeCadastoLider(bairro, lider);
+            return Ok(quantidade);
+        }
+
+
     }
 }

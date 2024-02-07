@@ -10,6 +10,7 @@ namespace EleicaoDigital.Application.Services.Usuario
         UsuarioViewModel ObterUsuarioPorEmail(string email);
         List<UsuarioViewModel> ObterTodos();
         List<UsuarioViewModel> ObterPorBairroOuLider(string bairro, int? lider);
+        UsuarioViewModel ObterQuatidadedeCadastoLider(string bairro, int? lider);
         string GerarTokenJwt(UsuarioViewModel usuario, string role);
     }
 }

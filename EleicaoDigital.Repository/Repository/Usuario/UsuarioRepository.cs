@@ -34,5 +34,20 @@ namespace EleicaoDigital.Repository.Repository.Usuario
         {
             return _context.tabUsuario.AsNoTracking().Where(u => u.Bairro == bairro || u.UsuarioCadastroCodigo == lider).ToList();
         }
+
+        public List<tabUsuario> ObterQuatidadedeCadastoLider(string bairro, int? lider)
+        {
+            if (lider.HasValue)
+            {
+                // Se o líder for especificado, retorna a quantidade de usuários cadastrados por esse líder no bairro específico
+                return _context.tabUsuario.AsNoTracking().Where(u => u.Bairro == bairro && u.UsuarioCadastroCodigo == lider).ToList();
+            }
+            else
+            {
+                // Se o líder não for especificado, retorna a quantidade de usuários cadastrados no bairro específico
+                return _context.tabUsuario.AsNoTracking().Where(u => u.Bairro == bairro).ToList();
+            }
+        }
+
     }
 }

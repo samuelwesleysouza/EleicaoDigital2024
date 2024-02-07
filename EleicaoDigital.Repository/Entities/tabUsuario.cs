@@ -12,5 +12,6 @@ namespace EleicaoDigital.Repository.Entities
         public string? Telefone { get; set; }
         public string? Logradouro { get; set; }
         public string? Bairro { get; set; }
+        public int? QuantidadeCadastro { get; set; }
     }
 }
